@@ -1,0 +1,25 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #222;
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Logo Property */
+.logo {
+  height: 37px;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -o-object-position: -8% 0;
+     object-position: -8% 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+/*# sourceMappingURL=body.css.map */

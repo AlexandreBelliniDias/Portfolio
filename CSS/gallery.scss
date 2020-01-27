@@ -1,0 +1,86 @@
+.gallery-image {
+padding: 10px;
+display: flex;
+flex-wrap: wrap;
+margin-left: 8%;
+width: 90%;
+margin-top: 150px;
+animation: fadein 1.5s;
+background-color: #222;
+}
+
+@keyframes fadein {
+    from { opacity: 0; filter: blur(20px) saturate(0%); margin-top: 500px;}
+    to   { opacity: 1; filter: blur(0px) saturate(100%); margin-top: 150px}
+}
+
+.gallery-image img {
+transform: scale(1.0);
+transition: transform 0.4s ease;
+background-color: #222;
+}
+a{
+    text-decoration: none;
+    color: white;
+    background-color: #222;
+}
+.img-box {
+box-sizing: content-box;
+margin: 0px;
+width: 24%;
+overflow: hidden;
+display: inline-block;
+color: white;
+position: relative;
+background-color: #222;
+padding: 0;
+}
+
+.caption {
+position: absolute;
+bottom: 5px;
+left: 20px;
+opacity: 0.0;
+transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+height: 100%;
+width: 100%;
+background-color:rgba(0, 0, 0, 0);
+position: absolute;
+top: 0;
+left: 0;
+transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+background-color:rgba(0, 0, 0, 0.568);
+}
+
+.img-box:hover .caption {
+transform: translateY(-20px);
+opacity: 1.0;
+}
+
+.img-box:hover {
+cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+font-size: 0.8em;
+}
+
+.opacity-low {
+opacity: 0.5;
+}
+
+.project-img img{
+width: 50%;
+margin-left: 45%;
+margin-top: 6%;
+}

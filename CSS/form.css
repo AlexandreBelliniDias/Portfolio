@@ -1,0 +1,70 @@
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: #3b3b3b;
+  -webkit-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  -webkit-box-shadow: 0 0 5px #00bbbb;
+          box-shadow: 0 0 5px #00bbbb;
+  border: 1px solid #00bbbb;
+}
+
+form button {
+  background-color: #00bbbb;
+  color: #222;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  font-weight: bold;
+}
+
+form p {
+  color: white;
+  margin-left: 100px;
+  font-size: 1em;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container2 {
+  border-radius: 5px;
+  background-color: #272727;
+  padding: 20px;
+  margin-top: 230px;
+  margin-left: 10%;
+  width: 40%;
+}
+
+.col-75 {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .container2 {
+    margin-top: 230px;
+    width: 350px;
+  }
+}
+/*# sourceMappingURL=form.css.map */
